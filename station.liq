@@ -20,7 +20,7 @@ end
 settings.server.socket := true
 settings.server.socket.path := unixsocket
 
-source = playlist(id="playlist", reload=600, reload_mode="seconds", playlist_file)
+source = playlist(id="playlist", playlist_file)
 
 source = metadata.map(insert_metadata, source)
 
