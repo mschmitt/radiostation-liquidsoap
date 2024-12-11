@@ -4,3 +4,5 @@ icecast_host    = "::1"
 icecast_port    = 8000
 icecast_mount   = "xxx.ogg"
 icecast_pass    = "xxx"
+icecast_desc    = "xxx (development stream)"
+icecast_name    = "xxx-Dev"
