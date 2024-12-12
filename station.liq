@@ -10,6 +10,7 @@ def meta2json(m) = # Return metadata as JSON string
   meta_json.add("filename", path.basename(m["filename"]))
   meta_json.add("local_usage_note", m["local usage note"])
   meta_json.add("local_license_tag", m["local license tag"])
+  meta_json.add("local_download_url", m["local download url"])
   json.stringify(meta_json)
 end
 
