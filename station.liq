@@ -21,7 +21,8 @@ end
 settings.server.socket := true
 settings.server.socket.path := unixsocket
 
-source = playlist(id="playlist", playlist_file)
+enable_replaygain_metadata()
+source = replaygain(playlist(id="playlist", playlist_file))
 
 source = metadata.map(insert_metadata, source)
 
