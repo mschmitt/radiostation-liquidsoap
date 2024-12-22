@@ -32,6 +32,7 @@ output.icecast(
   port=icecast_port,
   password=icecast_pass,
   description=icecast_desc,
+  genre=icecast_genre,
   name=icecast_name,
   mount=icecast_mount,
   mksafe(crossfade(source))
