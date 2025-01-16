@@ -7,6 +7,7 @@ def meta2json(m) = # Return metadata as JSON string
   meta_json.add("artist", m["artist"])
   meta_json.add("album_artist", m["album_artist"])
   meta_json.add("title", m["title"])
+  meta_json.add("duration_seconds", request.duration(m["filename"]))
   meta_json.add("filename", path.basename(m["filename"]))
   meta_json.add("local_usage_note", m["local usage note"])
   meta_json.add("local_license_tag", m["local license tag"])
